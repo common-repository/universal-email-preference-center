@@ -1,0 +1,199 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+table.uepc th {
+  padding: 8px 8px;
+}
+
+.uepc-settings-wrap .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.uepc-settings-wrap .tooltip:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.uepc-settings-wrap .tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+  font-size: 12px !important;
+  font-weight: normal !important;
+}
+.uepc-settings-wrap a.nav-tab.settings-valid-true {
+  background: limegreen;
+  color: #fff;
+}
+.uepc-settings-wrap a.nav-tab.settings-valid-false {
+  background: red;
+  color: #fff;
+}
+
+/* Free Card CSS  */
+.uepc-free .columns {
+  float: left;
+  width: 31.5%;
+  padding: 8px;
+  background: #fff;
+}
+
+.uepc-free .price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.uepc-free .price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.uepc-free .price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.uepc-free .price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.uepc-free .price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.uepc-free .upgrade {
+  padding: 0px !important;
+}
+
+.uepc-free .upgrade-button {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+}
+.uepc-free .upgrade-button:hover {
+  background-color: white;
+  border: 1px solid #04aa6d;
+  color: #04aa6d;
+}
+
+/**
+Log Page start
+**/
+
+.logDiv .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.logDiv .active,
+.logDiv .accordion:hover {
+  background-color: #ccc;
+}
+
+.logDiv .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-right: 20px;
+}
+
+.logDiv .active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.current_time{
+  float: right;
+  margin-right: 22px;
+  font-size: 15px;
+}
+.logDiv{
+  font-weight: 500; width: 98%;
+}
+.form_wrapper{
+  margin-bottom: 10px;
+}
+/**
+Sidebar Css
+*/
+.email-preference-shortcode-options>li {
+  margin-bottom: 25px;
+}
+
+.email-preference-shortcode-options .description {
+  font-size: 11px;
+  line-height: 0;
+}
+
+.email-preference-shortcode-options .code {
+  width: 100%;
+}
+
+.hilite {
+  background: #0073aa;
+  color: #fff;
+  padding: 10px;
+}
+
+.hilite h3 {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/**
+options
+*/
+.text-center{
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .uepc-free .columns {
+    width: 100%;
+  }
+}

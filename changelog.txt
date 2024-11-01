@@ -1,0 +1,45 @@
+=== Universal email preference center ===
+# When a pull request is approved.
+# CI script will look for the most recent version number, then
+# if it is a "bug fix" it will increment that version by 00.00.01 
+# if it is a "feature" it will increment by 0.01 
+# if it is a "version" it will increment by 
+# omit leading zeros
+# Then CI will update the version number everywhere else it is needed.
+# CI will look at the changelog, and publish to README.txt All versions, All Features on the latest Version, All bugfixes on the latest feature. 
+
+[feature] [version 1.3.0] 
+- Added functionality to highlight the settings tab. The tab will be red if the app is not connected, and green if the app is connected.
+- Added option for new request integration under 'Select Email Center'.
+
+[bug-fix] [version 1.2.4] 
+-testing ci merge up capabilities
+-modified ci to use  the runner server-runner 
+
+[bug-fix] [version 1.2.3] 
+-updated copy
+
+[bug-fix] [version 1.2.2] 
+-ci
+[bug-fix] [version 1.2.1]
+-ci
+[feature] [version 1.2.0] 
+-ci
+[feature] [version 1.1.0]
+* bug fix - status pre release
+    - Resolved issue preventing upload to freemius due to uninstall problem.
+* feature -
+- Implemented token validation functionality.
+- Incorporated  added functionality to display original class and list name in the event of any modifications.
+* Fixed the issue related ActiveCampagian user name update issue.
+
+[bug-fix] [version 1.2.2] 
+* Fixed the issue related ActiveCampagian user name update issue.
+
+[feature] [version 1.0.1]
+* Fix the validate token function. I've made some changes to the 'validate token' function. Previously, the function sanitized the key while validating, but not while creating. I have  updated the function so that it sanitizes the key both when creating and validating.
+* I have fixed an issue with the tamper protection feature. Enabling the feature should now activate the tamper protection functionality as expected.
+* I have made some changes to the security vulnerability functions.
+
+[version] [version 1.0.0]
+-major refactor
